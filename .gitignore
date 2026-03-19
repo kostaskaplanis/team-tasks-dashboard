@@ -1,5 +1,6 @@
 # dependencies
 node_modules/
+*/node_modules/
 .pnp
 .pnp.*
 .yarn/*
@@ -10,10 +11,15 @@ node_modules/
 
 # build output
 .next/
+*/.next/
 out/
+*/out/
 build/
+*/build/
 dist/
+*/dist/
 coverage/
+*/coverage/
 
 # environment files
 .env
@@ -21,7 +27,13 @@ coverage/
 .env.development.local
 .env.test.local
 .env.production.local
+*/.env
+*/.env.local
+*/.env.development.local
+*/.env.test.local
+*/.env.production.local
 !.env.example
+!*/.env.example
 
 # logs
 npm-debug.log*
@@ -32,6 +44,7 @@ yarn-error.log*
 
 # deployment
 .vercel/
+*/.vercel/
 
 # TypeScript / Next.js generated
 *.tsbuildinfo
